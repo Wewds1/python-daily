@@ -16,4 +16,4 @@ def send_message(route):
     travel_time = sum(distance / speed for distance in route)
     delay = 0.5 * (len(route) - 1)
     total = travel_time + delay
-    return float(f"{total:.4f}".rstrip('0').rstrip('.') if '.' in f"{total:.4f}" else f"{total:.4f}")
+    return float(f"{total:.4f}".rstrip('0').rstrip('.') if '.' in f"{total:.4f}" else f"{total:.4f}")   
