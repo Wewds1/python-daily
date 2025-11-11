@@ -7,3 +7,26 @@ For example, given 52, return 1. There's only one combination of 52 cards to pic
 
 
 """
+
+def combinations(cards):
+    deck = 52
+    deck_fact = factorial(deck)
+    cards_fact = factorial(cards)
+    total_fact = factorial(deck - cards)
+    
+    return deck_fact // (cards_fact * total_fact)
+    
+
+
+def factorial(n):
+    if n ==0 or n==1:
+        return 1
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+
+
+
+print(combinations())

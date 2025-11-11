@@ -16,4 +16,5 @@ def format(seconds):
         return f"{hrs}:{mins:02}:{secs:02}"
     else:
         return f"{mins}:{secs:02}"
+    
 print(format(3661))  # "1:01:01"
