@@ -13,9 +13,8 @@ def longest_word(sentence):
     s = sentence.replace(".","").replace("?","").replace("!","").replace("'","").split(" ")
     word = ""
     for i in s:
-        if i.isalpha():
-            if len(i) > len(word):
-                word = i
+        if i.isalpha() and len(i) > len(word):
+            word = i
 
             
             
