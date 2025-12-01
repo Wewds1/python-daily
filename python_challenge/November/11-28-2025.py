@@ -16,7 +16,7 @@ The first "P" is not in the correct location ("1"), the "O" isn't in the secret 
 
 """
 
-from collections import Counter
+from collections import Counter 
 def compare(word, guess):
     n = len(word)
     result = ["0"] * n
@@ -29,7 +29,7 @@ def compare(word, guess):
             result[i] = "2"
             counts[guess[i]] -= 1 
 
-    for i in range(n):
+    for i in range(n):  
         if result[i] == "0": 
             if counts[guess[i]] > 0:
                 result[i] = "1"

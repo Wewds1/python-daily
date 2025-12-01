@@ -11,10 +11,10 @@ For example, the divisors of 4 are 1, 2, and 4. The divisors of 6 are 1, 2, 3, a
 
 def gcd(x, y):
 
-    more = x if x > y else y
+    less = y if x > y else x
     gcd = 0
 
-    for i in range(1, more+1):
+    for i in range(1, less+1):
         if x % i == 0 and y % i == 0:
             gcd = i
 

@@ -1,0 +1,10 @@
+/.ipynb_checkpoints
+/venv
+/basic
+/day1
+/pinoy_foods
+/saykit
+
+*.png
+*.jpg
+*.jpeg
