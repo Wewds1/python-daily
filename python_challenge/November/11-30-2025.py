@@ -16,6 +16,14 @@ Words are separated by a single space and only consist of letters (A-Z). Don't i
 If the given sentence meets any of the rules above, return "AI", otherwise, return "Human".
 
 
+Given a distance in miles as a number, return the equivalent distance in kilometers.
+
+The input will always be a non-negative number.
+1 mile equals 1.60934 kilometers.
+Round the result to two decimal places.
+
+
+
 """
 
 def detect_ai(text):
@@ -42,6 +50,14 @@ def detect_ai(text):
         return "AI"
     return "Human"
 
+def convert_to_km(miles):
+    km = 1.60934
+
+    return round(miles * km,2)
+
+print(convert_to_km(0.621371))
+
+
 print(detect_ai("The hypersonic brown fox - jumped (over) the lazy dog."))
 
 
@@ -52,4 +68,13 @@ Passed:2. detect_ai("The hypersonic brown fox - jumped (over) the lazy dog.") sh
 Passed:3. detect_ai("Yes - you're right! I made a mistake there - let me try again.") should return "AI".
 Passed:4. detect_ai("The extraordinary students were studying vivaciously.") should return "AI".
 Passed:5. detect_ai("The (excited) student was (coding) in the library.") should return "AI".
+"""
+
+
+"""
+Passed:1. convert_to_km(1) should return 1.61.
+Passed:2. convert_to_km(21) should return 33.8.
+Passed:3. convert_to_km(3.5) should return 5.63.
+Passed:4. convert_to_km(0) should return 0.
+Passed:5. convert_to_km(0.621371) should return 1.
 """
